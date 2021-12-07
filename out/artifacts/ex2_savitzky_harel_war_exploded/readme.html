@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Title</title>
+</head>
+
+<body>
+
+<h1>Internet Programming Course B - Exercise 2</h1>
+<h2>Harel Savitzky</h2>
+<h4>Student:</h4>
+<ul>
+    <li>Harel Savitzky</li>
+    <li>ID 305390692</li>
+    <li>harelsavitzky@gmail.com</li>
+</ul>
+
+<h2>Link to my <a href="doc/com/example/ex2/package-summary.html"> API </a>.</h2>
+
+<h2>Execution</h2>
+<p>The submission is a intellij servlet project</p>
+
+<h2>Assumptions</h2>
+<p>The program use Jsoup packages.</p>
+
+<h2>Program Explanation</h2>
+<p>in this program we will build a servlet project, we will build a site that will hold questions and<br>
+    the user would be able to reply on them and to display the answers if he wish.<br>
+</p>
+
+<h2>Design Explanation</h2>
+<p>the program designed in a modular way, each servlet/function got its own responsibility,<br>
+*questionServlet - the main servlet, initializing the runTimeData (class that function as database), and extracting<br>
+the questions and number of answers to each answer in order to return it to the script file that builds the<br>
+questions on that page dynamically.<br>
+*answerServlet - this servlet is being called if we press on "answer" button, or if we want to submit the answer<br>
+if we press the answer button the page will be build dynamically and we will move there, if we press submit<br>
+we will extract the name and the answer, we will save them in the database class, than we will be redirected to the<br>
+index page.
+*getAnswers - a servlet that is being called when we press on "show answers", than the servlet extract the data<br>
+(questions + answers) and return in to the index script page in order to build the answers display dynamically.<br>
+*runTimeData - a class that functions as our database, it saves data on the program runtime only, it has several<br>
+functions in order to manage the data. we will create a single object from this class, that will be used from all<br>
+the servlets on the program (in the exact same one..).<br>
+*index.html - our landing page.<br>
+*readme.html - our readme page.<br>
+*formJs.js - the form script file.<br>
+*indexJs.js - our landing page (question page) script file.<br>
+*questions.txt - the questions file.<br>
+*styles.css - CSS file.<br>
+
+<h2>Other Notes</h2>
+-----------
+
+<h2>Exceptions</h2>
+our main servlet "questionsServlet" will have a "try""catch" block, and will catch the necesary exceptions<br>
+<br>
+<address>Submitted 28 April 2021 </address>
+
+</body>
+</html>

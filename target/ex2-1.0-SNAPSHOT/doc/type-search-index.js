@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","u":"allclasses-index.html"},{"p":"com.example.ex2","l":"answerServlet"},{"p":"com.example.ex2","l":"getAnswers"},{"p":"com.example.ex2","l":"questionsServlet"},{"p":"com.example.ex2","l":"runTimeData"}];updateSearchResults();

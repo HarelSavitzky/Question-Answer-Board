@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ex2_savitzky_harel:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>ex2_savitzky_harel</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="ex2-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="ex2_savitzky_harel:war exploded" />
+    </root>
+  </artifact>
+</component>
